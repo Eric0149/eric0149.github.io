@@ -3,14 +3,34 @@
   
   <head>
     <style>
+      
+          /*body css code*/
+      body{
+        align-items: center;
+        margin-left: 30px;
+      }
+      /*link alteration for tabs menu*/
+      .a1{
+        color: white;
+      }
+          /*label css menu bar*/
+      .label1{
+        height: 40px;
+        font-weight: 400;
+        background-color:black
+      }
+          /*left css some higlights*/
       .left{
         float: left;
         width: 22%;
         height: 450px;   
-        background-color: lightgray;
+        background-color: white;
         padding-left: 10px;
+        padding-right: 10px;
         opacity: 0.7;
+        position: inherit;
       }
+          /*middle css for the main content or news*/
       .middle{
         float: left;
         width: 50%;
@@ -20,53 +40,102 @@
         size: initial;
         padding-left: 10px;
         padding-right: 10px;
-        opacity: 0.6;        
+        opacity: 0.6;    
+        position: inherit;    
       }
+          /*right css that might contain ads*/
       .right{
         float: left;
-        width: 22%;
-        height: 450px;   
-        background-color: lightgray;
+        width: 23%;
+        height:450px;   
+        background-image: url('smiley.jpg');
         padding-left: 10px;
+        padding-right: 10px;
         opacity: 0.7;
       }
+
       .foot{
         background-color: lightgrey;
       }
+
       .form{
-        background-color: whitesmoke;
+        background-color: lime;
+        align-self: center;
       }
 
+          /* my hovering css code*/
+      .label1:hover{
+        size: 90px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid lightgreen;
+        border-radius: 6px;
+        
+      }
+      
     </style>
     <meta charset="utf-8">
+    <!--just the title of my tab-->
     <title>
       DailyNews
     </title>
   </head>
+  <!--beginnimg of my body and end of head part-->
 
-  <body style=" background-image: url('globe.jpg');z-index: 1;">
-    
-    <div class="head" style="width= 88%; height= 12%; background-color: #030b3a;">
-      <div style="height: 60%"><h2 style="color: hsl(175, 98%, 51%);">
+  <body style=" background-image: url('globe.jpg');">
+    <!--added a background picture to my body in the above code-->
+  
+    <!--well just modifying my page title-->
+    <div  style="opacity:0.6; width: 88%; height: 12%; background-color:lightgray; font-size: larger; font-weight:400; margin-top: 20px">
+      <div class="head"><h2 style=" color: deepskyblue;">
         <center>The DailyNews</label></center>
+        <!--until here still modifying title page-->
+        <table style="float: right; margin-bottom: 40px;">
+          <tr>
+            <td>
+              <img src="user.jpg" style="height: 30px;width: 30px;">
+            </td>
+          </tr>
+        </table>
       </h2></div>
-      <div style=" height: 40; background-color: rgb(8, 191, 247); opacity: 0.5;">
+      
+      <!--start of the tab part of our web-->
+      <div style="opacity: 1;">
       <table>
-        
         <tr>
-          <div style="background-color: #030b3a;opacity: 1;">
+          <!--modifications on my homebutton-->
+          <div>
             <td>
-              <a href=" "><img src="home2-icon.jpg" height="30px" width="30px" style="border-radius:50%"></a>
+              <a href=" "><img src="home2-icon.jpg" height="30px" width="30px" style="border:2px solid cyan; border-radius: 12px"></a>
             </td>
           </div>
-          <div style="background-color: rgb(7, 244, 252);">
+          <!--that is all for homebutton-->
+
+          <!--beginning of my menubar or tabs-->
+          <div style="height: 20px;">
             <td>
-            <label><a href</label>
+             <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/donald-trump-nigeria-twitter_n_60c087bee4b0db85704fbdd7">Politics</a></label>
             </td>
             <td>
-            
+              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/jane-marczewski-cancer-americas-got-talent-nightbirde_n_60c09689e4b059c73bd3f9de">Business</a></label>
+            </td>
+            <td>
+              <label class="label1"><a class="a1" href="https://www.huffpost.com/life/">Health</a></label>
+            </td>
+            <td>
+              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/jane-marczewski-cancer-americas-got-talent-nightbirde_n_60c09689e4b059c73bd3f9de">Entertainment</a></label>
+            </td>
+            <td>
+              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/kebryan-hayes-home-run-out_n_60c0aed7e4b0af343e9a955b">Sports</a></label>
+            </td>
+            <td>
+              <label class="label1"><a class="a1" href="https://www.nytimes.com/2021/06/08/science/nasa-juno-jupiter-ganymede.html">Science</a></label>
+            </td>
+            <td>
+              <label class="label1"><a class="a1" href="https://www.bing.com/videos/search?q=BBC+News&qpvt=BBC+News&FORM=VDRE">Video</a></label>
             </td>
           </div>
+          <!--end of my tabs decoration--><!--please try to look-up links from ny times or bbc news rather than the other site -->
         </tr>
 
       </table>
@@ -83,37 +152,9 @@
         </p>
       </div>
     
-      <div class="right">
+      <div class="right" style="background-image: url( )">
 
-        <p style="text-emphasis-color: cyan;"><label>@Sign-in</label></p>
-        <form>
-          <table style="opacity: 1">
-            <tr>
-              <td>
-                <label style="background-color: cyan;">User-name:</label>
-              </td>
-              <td>
-                <input type="text" placeholder="example:jane">
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <label>Password:</label>
-              </td>
-              <td>
-                <input type="password" placeholder="enter your password">
-              </td>
-            </tr>
-            <tr>
-              <td>
-               
-              </td>
-              <td>
-                <a href=" ">Create an account</a>
-                <input type="submit" value="sign-in" onclick="href://">
-              </td>
-          </table>
-        </form>
+
       </div>
 
     </div>
