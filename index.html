@@ -107,20 +107,27 @@
   <body style=" background-image: url('globe.jpg');">
     <!--added a background picture to my body in the above code-->
     <!--division that is attached to the top(upper-most)-->
-    <div style="transform: translate(-100,-100);background-color: rgb(15, 14, 14); padding-left: 80px;">
+    <div style="transform: translate(-100,-100);background-color: rgb(15, 14, 14); padding-left: 60px;">
       <table>
         <tr>
           <td>
-            <label style="color: white;background-color: darkblue;margin-right: 100px;">Trending:</label>
+            <!--position for trending label-->
+            <label style="color: white;background-color: darkblue;margin-left: 30px;">Trending:</label>
           </td>
-          <td style="transform: translate(-100px,0px);">
+          <!--distance btn trending and that link-->
+          <td style="transform: translate(-100px,0px);padding-left: 100px;">
             <a href="https://dailyreporter.com/2021/06/08/milwaukee-committee-rejects-policy-to-ban-demolition-of-vacant-properties/"style="color: lightgray; font-weight=50px">milwaukee committee rejects policy</a>
           </td>
-          <td style=" ">
+          <td style="padding-left: 500px;">
             <a href="https://dailyreporter.com/subscribe/"style="color: lightgray; font-weight=50px">Subscribe</a>
           </td>
           <td style=" ">
             <a href="https://dailyreporter.com/?dmcss=login"style="color: lightgray; font-weight=50px">Log-in</a>
+          </td>
+          <!--the search buttton-->
+          <td>
+            <input type="text" style="background-color: darkred;">
+            <input type="submit" value=""style="padding:0; transform: translate(2px,3px)">
           </td>
         </tr>
       </table>
