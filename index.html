@@ -3,6 +3,16 @@
   
   <head>
     <style>
+          /*my css for the title of the page*/
+      .head-title{
+        opacity:0.9 ;
+        width: 100%;
+        height: 9%;
+        background-color:darkslategray; 
+        font-size: larger; font: weight 600px;
+        margin-top: 40px;
+        transform: scaleX(0.8);
+      }
       
           /*body css code*/
       body{
@@ -17,7 +27,8 @@
       .label1{
         height: 40px;
         font-weight: 400;
-        background-color:black
+        background-color:black;
+        margin-bottom: 0%;
       }
           /*left css some higlights*/
       .left{
@@ -27,7 +38,7 @@
         background-color: white;
         padding-left: 10px;
         padding-right: 10px;
-        opacity: 0.7;
+        opacity: 1;
         position: inherit;
       }
           /*middle css for the main content or news*/
@@ -40,7 +51,7 @@
         size: initial;
         padding-left: 10px;
         padding-right: 10px;
-        opacity: 0.6;    
+        opacity: 2;    
         position: inherit;    
       }
           /*right css that might contain ads*/
@@ -66,12 +77,23 @@
           /* my hovering css code*/
       .label1:hover{
         size: 90px;
-        background-color: lightgreen;
-        color: black;
+        color: blue;
+        background-color: lightcyan;
         border: 1px solid lightgreen;
         border-radius: 6px;
         
       }
+      /*for login button*/
+      /* The popup form - hidden by default */
+      .form-popup {
+      display: none;
+      position: relative;
+      top: 2px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 0.9;
+      background-color: darkgoldenrod;
+    }
       
     </style>
     <meta charset="utf-8">
@@ -86,21 +108,31 @@
     <!--added a background picture to my body in the above code-->
   
     <!--well just modifying my page title-->
-    <div  style="opacity:0.6; width: 88%; height: 12%; background-color:lightgray; font-size: larger; font-weight:400; margin-top: 20px">
-      <div class="head"><h2 style=" color: deepskyblue;">
+    <div class="head-title">
+      <div class="head"><h2 style=" transform:translate(2px,30px); color: cyan;height: 80%;">
         <center>The DailyNews</label></center>
-        <!--until here still modifying title page-->
+        <!--until here still modifying title of page-->
         <table style="float: right; margin-bottom: 40px;">
           <tr>
             <td>
-              <img src="user.jpg" style="height: 30px;width: 30px;">
+              <div><img src="user.jpg"style="height: 30px;width: 30px; transform: translate(-15px,-50px)">
+                <!--button for a popup for signing in-->
+                <iframe class="sorm-popup">
+                  <form >
+                    User-name:<input type="text" placeholder="user-name">
+                    Password:<input type="text" placeholder="your account password">
+                    
+                    <input type="submit" value="SEND">
+                  </form>
+                </iframe>
+              </div>>
             </td>
           </tr>
         </table>
       </h2></div>
       
       <!--start of the tab part of our web-->
-      <div style="opacity: 1;">
+      <div style="opacity: 1; height: 20%;transform: scaley(1.2);">
       <table>
         <tr>
           <!--modifications on my homebutton-->
@@ -142,14 +174,24 @@
       </div>
     <div class="body">
   
-      <div class="left">      
-        <p>hello</p>
+      <div class="left hover">      
+        
+        <!--links to other site in the midlle section-->  
+        <p style="float:left;background-color: black;" >
+          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img style="float: inline-end;"src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
+        </p><br>
+        <p style="float:left;background-color: black;">
+          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img style="float: inline-end;"src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
+        </p>
+        <p style="float:left; background-color: black;">
+          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
+        </p>
+
       </div>
     
       <div class="middle">
-        <p>
-          <a href=" "><img src=" "height="100px"width="80px"></a>
-        </p>
+        <!--links to other site in the midlle section-->  
+        
       </div>
     
       <div class="right" style="background-image: url( )">
