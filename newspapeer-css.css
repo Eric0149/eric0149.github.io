@@ -1,0 +1,12 @@
+.img{
+    height: 30%;
+    width: 25%;
+    transform: translate(2%,12%);
+}
+#header{
+    font-size: x-large;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+    
+}

@@ -3,15 +3,25 @@
   
   <head>
     <style>
+      /* my search button*/
+      .search{
+        opacity: 2;
+        background-color: chartreuse;
+      }
+      .search :hover{
+        opacity: 2;
+        cursor: pointer;
+      }
           /*my css for the title of the page*/
       .head-title{
-        opacity:0.9 ;
-        width: 100%;
-        height: 9%;
+        opacity: 1;
+        width: 80%;
+        height: 25%;
         background-color:darkslategray; 
-        font-size: larger; font: weight 600px;
-        margin-top: 40px;
-        transform: scaleX(0.8);
+        font-size: larger;
+         font-weight:400;
+        margin-top: 0px;
+       
       }
       
           /*body css code*/
@@ -19,10 +29,20 @@
         align-items: center;
         margin-left: 30px;
       }
+
       /*link alteration for tabs menu*/
       .a1{
         color: white;
+        background-color: gray;
+        transform: translate(30px,-180px);
       }
+
+      .a1:hover{
+        color: rgb(1, 3, 31);
+        background-color: white;
+        font-weight: 550;
+      }
+
           /*label css menu bar*/
       .label1{
         height: 40px;
@@ -30,6 +50,7 @@
         background-color:black;
         margin-bottom: 0%;
       }
+
           /*left css some higlights*/
       .left{
         float: left;
@@ -41,6 +62,7 @@
         opacity: 1;
         position: inherit;
       }
+
           /*middle css for the main content or news*/
       .middle{
         float: left;
@@ -54,6 +76,7 @@
         opacity: 2;    
         position: inherit;    
       }
+
           /*right css that might contain ads*/
       .right{
         float: left;
@@ -65,9 +88,7 @@
         opacity: 0.7;
       }
 
-      .foot{
-        background-color: lightgrey;
-      }
+     
 
       .form{
         background-color: lime;
@@ -76,13 +97,14 @@
 
           /* my hovering css code*/
       .label1:hover{
-        size: 90px;
-        color: blue;
-        background-color: lightcyan;
+        height: 40%;
+        width: 20%;
+        text-decoration: underline;
         border: 1px solid lightgreen;
         border-radius: 6px;
         
       }
+
       /*for login button*/
       /* The popup form - hidden by default */
       .form-popup {
@@ -93,6 +115,34 @@
       border: 3px solid #f1f1f1;
       z-index: 0.9;
       background-color: darkgoldenrod;
+      }
+
+      .tabus{
+      opacity: 5;
+      transform: translate(0%,200%);
+      border:2px solid black; 
+      background-color: rgb(3, 81, 224);
+      height: -5%;
+      width: auto;
+    }
+
+    #adjust{
+      height:2px;
+      width: 89px;
+      transform: translate(-10%,-50px);
+      background-color: indigo;
+    }
+
+    /*image in div left property*/
+    .img{
+      height: 10px;
+      width: 10x;
+      float: left;
+    }
+    
+    .label1{
+      height: 10%;
+      width: 10%;
     }
       
     </style>
@@ -107,7 +157,7 @@
   <body style=" background-image: url('globe.jpg');">
     <!--added a background picture to my body in the above code-->
     <!--division that is attached to the top(upper-most)-->
-    <div style="transform: translate(-100,-100);background-color: rgb(15, 14, 14); padding-left: 60px;">
+    <div style="transform: translate(-5%,0%); background-color: rgb(15, 14, 14); padding-left: 60px;width: 120%;">
       <table>
         <tr>
           <td>
@@ -121,80 +171,88 @@
           <td style="padding-left: 500px;">
             <a href="https://dailyreporter.com/subscribe/"style="color: lightgray; font-weight=50px">Subscribe</a>
           </td>
-          <td style=" ">
+          <td style="padding-right: 0%;">
             <a href="https://dailyreporter.com/?dmcss=login"style="color: lightgray; font-weight=50px">Log-in</a>
           </td>
           <!--the search buttton-->
           <td>
-            <input type="text" style="background-color: darkred;">
-            <input type="submit" value=""style="padding:0; transform: translate(2px,3px)">
+            <form action="google.com/search?q" method="get">
+              <input type="text" style="background-color: rgb(219, 150, 150);transform: translate(0px,-1px); color: cyan">
+              <input class="search hover" type="submit"placeholder="search..."style="color:red;font: weight 500px;">
+            </form>
           </td>
         </tr>
       </table>
     </div>
 
     <!--well just modifying my page title-->
-    <div class="head-title">
-      <div class="head"><h2 style=" transform:translate(2px,30px); color: cyan;height: 80%;">
-        <center>The DailyNews</label></center>
+    <div style=" transform:translate(0px,-20px);height: 5%;width: 100%; float: left;">
+      <div ><h2>
+        <!--the in-between header-->
+        <label style="font-weight:900;"> 
+          <a href="https://dailyreporter.com/"style="text-decoration:none"><h1 style="color: rgb(128, 128, 128);">The Daily</h1><br><h2 style="color: #a5a5a5;margin-top: -70px;float: inline-start;">Reporter</h2></a>
+          <a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsudlOYytXuCaiMFv_yMcIUWzQyiMo5_ac8zqCN1GotCn6ju9NnoX1VC3X0Tq70VENdmnA_sxWqnynKafw7ieelr3C1i7_7J921K0lbrPF24dJwsj8tLekWHOXo6ozp6n6m7Y6DOn6zS6xOqJ_066lSgUrld2SdeVh4E1ohPAPJvZE4tlvSzlgOi_cZajfPQ5Xi-KsFAntAW3rncyP2dm4dp_tQOzkuClk337Q-_2RFBGxkZfIfceB8Y3M9U-jAoz3PjPwbGd-h5fvWwT7KCxW-KFRXsOc1-AjsTSLgj&sig=Cg0ArKJSzDeV1UVVM5nG&fbs_aeid=[gw_fbsaeid]&adurl=https://www.wellsconcrete.com/%3Futm_source%3DTDR%26utm_medium%3DDigital%2520Ad%26utm_campaign%3DDigAdCampaign&nm=12&nx=415&ny=-39&mb=2"><img src="in-logo.jpg" style="float: inline-start;"></a>
+        </label>
         <!--until here still modifying title of page-->
-        
-      </h2></div>
+      </div>
       
       <!--start of the tab part of our web-->
-      <div style="opacity: 1; height: 20%;transform: scaley(1.2);">
-      <table>
-        <tr>
-          <!--modifications on my homebutton-->
-          <div>
+      <div class="tabus">
+        <table>
+          <tr>
+            <!--modifications on my homebutton-->
+         
+            <!--beginning of my menubar or tabs-->
             <td>
-              <a href=" "><img src="home2-icon.jpg" height="30px" width="30px" style="border:2px solid cyan; border-radius: 12px"></a>
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/category/general/">NEWS</a></label>
             </td>
-          </div>
-          <!--that is all for homebutton-->
 
-          <!--beginning of my menubar or tabs-->
-          <div style="height: 20px;">
             <td>
-             <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/donald-trump-nigeria-twitter_n_60c087bee4b0db85704fbdd7">Politics</a></label>
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/jobtrac/">JOBs</a></label>
             </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/jane-marczewski-cancer-americas-got-talent-nightbirde_n_60c09689e4b059c73bd3f9de">Business</a></label>
-            </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.huffpost.com/life/">Health</a></label>
-            </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/jane-marczewski-cancer-americas-got-talent-nightbirde_n_60c09689e4b059c73bd3f9de">Entertainment</a></label>
-            </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.huffpost.com/entry/kebryan-hayes-home-run-out_n_60c0aed7e4b0af343e9a955b">Sports</a></label>
-            </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.nytimes.com/2021/06/08/science/nasa-juno-jupiter-ganymede.html">Science</a></label>
-            </td>
-            <td>
-              <label class="label1"><a class="a1" href="https://www.bing.com/videos/search?q=BBC+News&qpvt=BBC+News&FORM=VDRE">Video</a></label>
-            </td>
-          </div>
-          <!--end of my tabs decoration--><!--please try to look-up links from ny times or bbc news rather than the other site -->
-        </tr>
 
-      </table>
-      </div>
-    <div class="body">
-  
-      <div class="left hover">      
+            <td>
+              <label class="label1"><a class="a1" href="http://publicnotices.dailyreporter.com/">PUBLIC NOTICE</a></label>
+            </td>
+
+            <td>
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/events/">EVENTs</a></label>
+            <td>
+
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/advertising/">ADVERTISING</a></label>
+            </td>
+
+            <td>
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/tdr-gear/#!/all">TOR-GEAR</a></label>
+            </td>
+
+            <td>
+              <label class="label1"><a class="a1" href="https://dailyreporter.com/hardhat-mail/">MAIL-ALERT</a></label>
+            </td>
+          </tr>
+          <!--end of my tabs decoration-->
+          <!--please try to look-up links from ny times or bbc news rather than the other site -->
         
+
+        </table>
+      </div>
+    </div>
+    <div class="body">
+      
+      <!--left section-->
+      <div class="left hover">      
         <!--links to other site in the midlle section-->  
-        <p style="float:left;background-color: black;" >
-          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img style="float: inline-end;"src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
-        </p><br>
-        <p style="float:left;background-color: black;">
-          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img style="float: inline-end;"src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
-        </p>
-        <p style="float:left; background-color: black;">
-          <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4658449&q=site:https%3A%2F%2Fchildandfamilyblog.com%2Ffeed%2F"><img src="smiley.jpg"height="100px"width="280px"style="padding: 2px;"><p1 style="float: right;color: white; ">family news about parenting-hood and related news</p1></a>
+        <p>
+          <!--the divisions header-->
+          <u style=" font-weight: 500;"></u><h3 ><a href="https://dailyreporter.com/category/tdr-people/" style="color:black;text-decoration:none">TDR people:</a></h3></u><br>
+          
+          <!--content's link-->
+          <label class="label1">  
+           <a href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"style="color: black;"><p style="text-align: bottom;">After leaving business district, agee joins design building project</p></a>
+           <a class="img" href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"><img src="g1.jpg"></a>
+          </label>
+
+          
         </p>
 
       </div>
@@ -204,13 +262,9 @@
         
       </div>
     
-      <div class="right" style="background-image: url( )">
+</div>
 
-
-      </div>
-
-    </div>
-    <div class="foot">
+    
 
     </div>
   </body>
