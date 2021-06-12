@@ -7,9 +7,11 @@
       .search{
         opacity: 2;
         background-color: chartreuse;
+        align-items: center;
+        cursor: pointer;
       }
       .search :hover{
-        opacity: 2;
+        opacity: 0.7;
         cursor: pointer;
       }
           /*my css for the title of the page*/
@@ -54,7 +56,7 @@
           /*left css some higlights*/
       .left{
         float: left;
-        width: 22%;
+        width: 18%;
         height: 450px;   
         background-color: white;
         padding-left: 10px;
@@ -66,7 +68,7 @@
           /*middle css for the main content or news*/
       .middle{
         float: left;
-        width: 50%;
+        width: 47%;
         height: 450px;   
        background-color: lightgray;
         background-position: inherit;
@@ -80,10 +82,10 @@
           /*right css that might contain ads*/
       .right{
         float: left;
-        width: 23%;
+        width: 20%;
         height:450px;   
-        background-image: url('smiley.jpg');
-        padding-left: 10px;
+        background-color: red;
+        
         padding-right: 10px;
         opacity: 0.7;
       }
@@ -119,7 +121,7 @@
 
       .tabus{
       opacity: 5;
-      transform: translate(0%,200%);
+      transform: translate(0%,-50%);
       border:2px solid black; 
       background-color: rgb(3, 81, 224);
       height: -5%;
@@ -135,14 +137,14 @@
 
     /*image in div left property*/
     .img{
-      height: 2px;
-      width: 2px;
-      float: inline-end;
+      height: auto;
+      width: 2%;
+      
     }
     
     .label1{
-      height: 5%;
-      width: 3%;
+      height: 10px;
+      width: 10px;
     }
       
     </style>
@@ -175,11 +177,9 @@
             <a href="https://dailyreporter.com/?dmcss=login"style="color: lightgray; font-weight=50px">Log-in</a>
           </td>
           <!--the search buttton-->
-          <td>
-            <form action="google.com/search?q" method="get">
-              <input type="text" style="background-color: rgb(219, 150, 150);transform: translate(0px,-1px); color: cyan">
-              <input class="search hover" type="submit"placeholder="search..."style="color:red;font: weight 500px;">
-            </form>
+          <td class="search">
+              <input type="text" placeholder="search..." >
+              <input type="submit" value="search">
           </td>
         </tr>
       </table>
@@ -244,30 +244,50 @@
         <!--links to other site in the midlle section-->  
         <p>
           <!--the divisions header-->
-          <u style=" font-weight: 500;"></u><h3 ><a href="https://dailyreporter.com/category/tdr-people/" style="color:black;text-decoration:none">TDR people:</a></h3></u><br>
+         <h3 ><a href="https://dailyreporter.com/category/tdr-people/" style="color:black;text-decoration:none;padding-top: 30px;">TDR people:</a></h3></u><br>
           
           <!--content's link-->
-          <div style="border: 2px solid black">
-            <label> 
-              <a  class="img"href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"><img src="g1.jpg"></a>
- 
-              <a href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"style="color: black;float: left"><p >After leaving business district, agee joins design building project</p></a>
-            </label>
-          </div>
+          <a href="https://www.surveymonkey.com/r/top-projects"><img src="left1.jpg"></a>
           
+          <a href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"><img src="g1.jpg"></a>
         </p>
 
       </div>
-    
+
+      <!--middle section-->
       <div class="middle">
-        <!--links to other site in the midlle section-->  
-        
+        <!--links to other site in the midlle section--> 
+        <a href="https://dailyreporter.com/2021/06/11/small-minneapolis-event-eyes-klobuchar-to-help-stop-line-3/"><img src="mid1.jpg"></a>       
       </div>
-    
-</div>
 
-    
+      <!--right section-->
+      <div class="right" style="background-color: red;margin-left: 0%;">
+        <form>
+          <table>
+            <tr>
+              user-name
+              <input type="text">
+            </tr>
 
+            <tr>
+              first-name
+              <input type="text">
+            </tr>
+            
+            <tr>
+              last-name
+              <input type="text">
+            </tr>
+
+            <tr>
+              password
+              <input type="password">
+            </tr>
+          
+          </table>
+        </form>
+      </div>
+  
     </div>
   </body>
 
