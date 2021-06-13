@@ -6,7 +6,7 @@
       /* my search button*/
       .search{
         opacity: 2;
-        background-color: chartreuse;
+        background-color: darkgray;
         align-items: center;
         cursor: pointer;
       }
@@ -138,7 +138,7 @@
     /*image in div left property*/
     .img{
       height: 30%;
-      width: 30%;
+      width: 60%;
       
     }
     
@@ -148,6 +148,9 @@
     }
     .imglinks{
       color:black;
+      float: left;
+      
+     
 
     }
       
@@ -181,10 +184,12 @@
             <a href="https://dailyreporter.com/?dmcss=login"style="color: lightgray; font-weight=50px">Log-in</a>
           </td>
           <!--the search buttton-->
-          <td class="search">
-              <input type="text" placeholder="search..." >
-              <input type="search" value="search">
-          </td>
+          <td >
+            <form action="https://www.google.com/search?q" method="get">
+              <input id="lookfor" type="text" placeholder="search..." >
+              <input class="search" id="lookfor" type="submit" value="search">
+            </form>
+            </td>
         </tr>
       </table>
     </div>
@@ -253,9 +258,10 @@
           <!--content's link-->
           <a href="https://www.surveymonkey.com/r/top-projects"><img src="left1.jpg"></a>
           
-          <a href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"><img class="img"src="g1.jpg"><h6>Emmem group as VP</h6></a><br>
+          <a href="https://dailyreporter.com/2021/06/11/after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp/"><img class="img"src="g1.jpg"><h6 class="imglinks">After after-leaving-business-district-agee-joins-design-build-firm-emem-group-as-vp</h6></a><br>
 
-          <a href="https://dailyreporter.com/2021/06/08/h-j-martin-adds-3-new-employees/"><img class="img" src="g2.jpg"></a>
+          <a href="https://dailyreporter.com/2021/06/08/h-j-martin-adds-3-new-employees/"><img class="img" src="g2.jpg"><h6 class="imglinks">Brad corp makes executive changes to the corporations management</h6></a>
+          <a href=" "class="imglinks">For more news you can visit the official site.</a>
         </p>
 
       </div>
@@ -263,16 +269,16 @@
       <!--middle section-->
       <div class="middle">
         <!--links to other site in the midlle section--> 
-        <a href="https://dailyreporter.com/2021/06/11/small-minneapolis-event-eyes-klobuchar-to-help-stop-line-3/"><img src="mid1.jpg"><p style="color: black"> Construction site for commerce an other related staff</p></a>       
+        <a href="https://dailyreporter.com/2021/06/11/small-minneapolis-event-eyes-klobuchar-to-help-stop-line-3/"><img src="mid1.jpg"><p style="color: black"> Construction site for commerce an other related staff(re-edited from the official site of daily Reporter).</p></a>       
         
-        <a href="  "><img src="mid1.jpg"><p style="color: black"> Construction site for commerce an other related staff</p></a>       
+        <a href=" https://dailyreporter.com/2021/06/11/interstate-expansions-budget-contractions/"><img src="mid2.jpg"><p style="color: black"> interstate interstate-expansions-budget-contractions(re-edited from the official site of daily Reporter)</p></a>       
         
       </div>
 
       <!--right section-->
       <div class="right">
-        <center><img src="mignon.gif" height="200%" width="100%" value="for more news about kids entertaining movies and documentatios"></center>
-        <form style="opacity: 4;background-color: lightgray;">
+        <center><img src="mignon.gif" height="200%" width="100%" value="for more news about kids entertaining movies and documentatios"alt="ads gif"></center>
+        <form style="opacity: 4;background-color: lightgray; margin-top: 70%;">
           <h2 style="color: cadetblue;">@sign-up</h2>
           <table>
             <tr>
@@ -343,11 +349,15 @@
               <td>
                 <input type="text">
               </td>
+            </tr>
 
+            <tr>
               <td>
 
               </td>
-              <td><input type="submit"value="Send"></td>
+              <td>
+                <input type="submit"value="Send">
+                <a href="https://dailyreporter.com/?dmcss=login">Already have an account.</td></a>
             </tr>
           
           </table>
