@@ -20,25 +20,33 @@
         background-image: url('globe.gif');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vw;
+        height: auto;
         width: 100vw;
+    }
+    #menu{
+        transform:translate(0px,-20px);
+        height: 5%;
+        width: 100%; 
+        float: left;
     }
 
     .tabus{
        opacity: 5;
-       transform: translate(0%,300%);
+       transform: translate(auto,30%);
        border:2px solid rgb(11, 26, 20);
        background-color: rgb(7, 32, 80);
        margin-top: 3.5vw;
        width: auto;
+       height: auto;
+       align-items: center;
       
 
     }
 
       /*my css for the title of the page div*/
     .pagetitle{
-        transform:translate(0%,150%);
-        margin-top: 2vw;
+        
+        margin-top: 1%;
         height: 5%;
         width: 100%; 
         float: left;
@@ -46,7 +54,8 @@
 
     /*this is the division containing all content from beneath th tab menu*/
     .content{
-        margin-top: 11vw;
+       
+        text-decoration: none;
     }
 
        
@@ -63,7 +72,7 @@
 
           /*label css menu bar*/
     .label1{
-        height: 40px;
+        height: auto;
         font-weight: 400;
         background-color: rgb(2, 16, 32);
         border-color: black;
@@ -108,6 +117,10 @@
         padding-right: 10px;
         opacity: 2;    
         position: inherit;    
+        
+    }
+    a.middle{
+        text-decoration: none;
     }
 
     /*right css that might contain ads*/
@@ -126,11 +139,13 @@
     .form{
         background-color: lime;
         align-self: center;
+        width: 300px;
+        height: 250px;
     }
 
     /*for login button*/
     /* The popup form - hidden by default */
-    .form-popup {
+    .form:hover {
       display: none;
       position: relative;
       top: 2px;
@@ -175,4 +190,12 @@
         margin-left: 12vw;
     }
 
-    
+    @media (min-width: 400px) {
+        
+    }
+
+    @media screen and (min-width: 640px) {
+        body {
+          background-color: lightgreen;
+        }
+      }
